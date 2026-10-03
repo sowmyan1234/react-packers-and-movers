@@ -1,0 +1,157 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: white;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.header h1 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.header p {
+  color: #6b7280;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.move-card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.move-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.location h2 {
+  margin: 8px 0;
+  color: #111827;
+  font-size: 20px;
+}
+
+.arrow {
+  display: block;
+  color: #2563eb;
+  font-size: 24px;
+}
+
+.summary {
+  display: flex;
+  gap: 30px;
+}
+
+.summary div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.summary span {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.summary strong {
+  color: #111827;
+}
+
+.details-button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.details-button:hover {
+  background: #1d4ed8;
+}
+
+.details {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.details h3 {
+  margin-top: 0;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.detail-row span {
+  font-weight: bold;
+  color: #374151;
+}
+
+.detail-row p {
+  margin: 0;
+  color: #6b7280;
+  text-align: right;
+}
+
+.status {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+@media (max-width: 768px) {
+  .move-top {
+    flex-direction: column;
+  }
+
+  .summary {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .detail-row {
+    flex-direction: column;
+  }
+
+  .detail-row p {
+    text-align: left;
+  }
+}
+
